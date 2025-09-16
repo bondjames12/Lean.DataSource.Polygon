@@ -160,7 +160,7 @@ namespace QuantConnect.Lean.DataSource.Polygon
             RestApiClient = new PolygonRestApiClient(_apiKey);
             _optionChainProvider = new CachingOptionChainProvider(new PolygonOptionChainProvider(RestApiClient, _symbolMapper));
 
-            ValidateSubscription();
+            //ValidateSubscription();
 
             // Initialize the exchange mappings
             _exchangeMappings = FetchExchangeMappings();
